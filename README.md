@@ -1,2 +1,2 @@
 # JMeter
-Perftest
+Perftest related to Learn2Enjoy channel
