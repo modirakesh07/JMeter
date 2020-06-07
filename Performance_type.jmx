@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Performance testing design" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Load testing expected 100 VU" enabled="true">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="1413389862">
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="0">0</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="1447162043">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50614">325</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1758">75</stringProp>
+          </collectionProp>
+          <collectionProp name="2052275607">
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="53652">675</stringProp>
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48625">100</stringProp>
+          </collectionProp>
+          <collectionProp name="-1828612350">
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="1507578">1050</stringProp>
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="1515111">1800</stringProp>
+            <stringProp name="1758">75</stringProp>
+          </collectionProp>
+          <collectionProp name="-1611396817">
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="1546018">2950</stringProp>
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="1159360586">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="1569955">3325</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+          <collectionProp name="-1752807360">
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="1572993">3675</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="TestPlan.comments">ramp up time of 2nd record(startup)=shutdown of 1st record, initial = initial+startup+hold time</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree/>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Stress testing with 150 VU" enabled="true">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="-1095904894">
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="1447162043">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50614">325</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1758">75</stringProp>
+          </collectionProp>
+          <collectionProp name="2052275607">
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="53652">675</stringProp>
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48625">100</stringProp>
+          </collectionProp>
+          <collectionProp name="134219410">
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="1507578">1050</stringProp>
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48692">125</stringProp>
+          </collectionProp>
+          <collectionProp name="-1593767569">
+            <stringProp name="48692">125</stringProp>
+            <stringProp name="1511422">1450</stringProp>
+            <stringProp name="48692">125</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48780">150</stringProp>
+          </collectionProp>
+          <collectionProp name="1581582025">
+            <stringProp name="48780">150</stringProp>
+            <stringProp name="1515333">1875</stringProp>
+            <stringProp name="48780">150</stringProp>
+            <stringProp name="1515111">1800</stringProp>
+            <stringProp name="48692">125</stringProp>
+          </collectionProp>
+          <collectionProp name="-604064068">
+            <stringProp name="48692">125</stringProp>
+            <stringProp name="1574760">3825</stringProp>
+            <stringProp name="48692">125</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48625">100</stringProp>
+          </collectionProp>
+          <collectionProp name="-1040085707">
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="1598873">4250</stringProp>
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1758">75</stringProp>
+          </collectionProp>
+          <collectionProp name="-1994119781">
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="1602717">4650</stringProp>
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="1546651469">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="1626654">5025</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+          <collectionProp name="477930099">
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="1629692">5375</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="TestPlan.comments">ramp up time of 2nd record(startup)=shutdown of 1st record, initial = initial+startup+hold</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree/>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Spike testing expected 120 VU and 140" enabled="true">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="1413389862">
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="0">0</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="1391192468">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50614">325</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="305718610">
+            <stringProp name="48687">120</stringProp>
+            <stringProp name="53652">675</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+          <collectionProp name="2019834125">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="54458">725</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-314874476">
+            <stringProp name="48749">140</stringProp>
+            <stringProp name="1507578">1050</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="1722">60</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="-646819860">
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="1508415">1110</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="TestPlan.comments">ramp up time of 2nd record(startup)=shutdown of 1st record, initial = initial+startup+</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree/>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Enduranse testing: peak load of 80VU for 3 hour" enabled="true">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="-249668792">
+            <stringProp name="1598">20</stringProp>
+            <stringProp name="0">0</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="-1793473146">
+            <stringProp name="1660">40</stringProp>
+            <stringProp name="50614">325</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1758">75</stringProp>
+          </collectionProp>
+          <collectionProp name="-1363828572">
+            <stringProp name="1722">60</stringProp>
+            <stringProp name="53652">675</stringProp>
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="48625">100</stringProp>
+          </collectionProp>
+          <collectionProp name="-1199670703">
+            <stringProp name="1784">80</stringProp>
+            <stringProp name="1507578">1050</stringProp>
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="46737849">10800</stringProp>
+            <stringProp name="1758">75</stringProp>
+          </collectionProp>
+          <collectionProp name="13845786">
+            <stringProp name="1722">60</stringProp>
+            <stringProp name="46768756">11950</stringProp>
+            <stringProp name="1758">75</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1691">50</stringProp>
+          </collectionProp>
+          <collectionProp name="1830711507">
+            <stringProp name="1660">40</stringProp>
+            <stringProp name="46792693">12325</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+          <collectionProp name="-1181896864">
+            <stringProp name="1598">20</stringProp>
+            <stringProp name="46795731">12675</stringProp>
+            <stringProp name="1603">25</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1603">25</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="TestPlan.comments">ramp up time of 2nd record(startup)=shutdown of 1st record, initial = initial+startup+</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
