@@ -1,2 +1,2 @@
 # JMeter
-Perftest related to Learn2Enjoy channel
+Perftest related to PerformanceTestingLearn2Enjoy channel
